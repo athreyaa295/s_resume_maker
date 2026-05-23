@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px;
+            border-left: 20px solid #2c3e50;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #2c3e50;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #555;
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .summary {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h1>{{name}}</h1>
+            <div class="contact">{{email}} | {{phone}} | {{linkedin}} | {{portfolio}}</div>
+        </div>
+        {{photo_html}}
+    </div>
+
+    <div class="section">
+        <div class="section-title">Executive Summary</div>
+        <div class="summary">{{summary}}</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Competencies</div>
+        <div>{{skills}}</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        {{experience}}
+    </div>
+
+    <div class="section">
+        <div class="section-title">Key Projects</div>
+        {{projects}}
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        {{education}}
+    </div>
+</body>
+
+</html>

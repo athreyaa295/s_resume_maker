@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .contact {
+            font-size: 11px;
+            margin-top: 5px;
+            color: #999;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h1>{{name}}</h1>
+            <div class="contact">{{email}} | {{phone}}</div>
+        </div>
+        {{photo_html}}
+    </div>
+
+    <div class="section">
+        <div class="section-title">Profile</div>
+        <div>{{summary}}</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <div>{{skills}}</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Experience</div>
+        {{experience}}
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        {{education}}
+    </div>
+</body>
+
+</html>
